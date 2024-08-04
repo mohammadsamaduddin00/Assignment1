@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Assignment</title>
+   <link rel="stylesheet" href="assignment.css">
+    <script src="assignment.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+       <img src="one.com" alt="Company Logo">
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="has-mega-menu">
+            <a href="#">Products</a>
+            <div class="mega-menu">
+              <div class="mega-menu-content">
+                <div class="category">
+                 <h3>Electronics</h3>
+                 <ul>
+                    <li><a href="#">Laptops</a></li>
+                    <li><a href="#">Smartphones</a></li>
+                  </ul>
+                </div>
+                <div class="category">
+                 <h3>Clothing</h3>
+                  <ul>
+                    <li><a href="#">Men's</a></li>
+                    <li><a href="#">Women's</a></li>
+                  </ul>
+                </div>
+                <div class="category">
+                  <h3>Home & Kitchen</h3>
+                  <ul>
+                    <li><a href="#">Furniture</a></li>
+                    <li><a href="#">Appliances</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+         </li>
+         <li><a href="#">About Us</a></li>
+         <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="comparison-table-section">
+     <h2>Product Comparison</h2>
+      <div class="table-container">
+        <table id="comparison-table">
+          <thead>
+            <tr>
+             <th>Product</th>
+             <th>Subtitle</th>
+             <th>Price</th>
+             <th>Features</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Product A</td>
+              <td>High-quality and durable</td>
+              <td>$99.99 <button>Add to Cart</button></td>
+              <td data-tooltip="Excellent battery life, 2-year warranty">Feature 1, Feature 2</td>
+            </tr>
+            <tr>
+              <td>Product B</td>
+              <td>Compact and portable</td>
+              <td>$89.99 <button>Add to Cart</button></td>
+              <td>Feature 1, Feature 2</td>
+            </tr>
+            <tr>
+              <td>Product C</td>
+              <td>Innovative design</td>
+              <td>$129.99 <button>Add to Cart</button></td>
+              <td>Feature 1, Feature 2</td>
+            </tr>
+            <tr>
+              <td>Product D</td>
+              <td>Affordable and efficient</td>
+              <td>$79.99 <button>Add to Cart</button></td>
+              <td>Feature 1, Feature 2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+    <div class="wizard-form">
+      <form id="wizard-form">
+        <div class="step step-1">
+          <h2>Step 1: Personal Information</h2>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+          <button type="button" class="next-button">Next</button>
+        </div>
+        <div class="step step-2">
+          <h2>Step 2: Product Preferences</h2>
+          <label><input type="checkbox" name="category" value="electronics"> Electronics</label>
+          <label><input type="checkbox" name="category" value="clothing"> Clothing</label>
+          <label><input type="checkbox" name="category" value="home"> Home & Kitchen</label>
+          <button type="button" class="prev-button">Previous</button>
+          <button type="button" class="next-button">Next</button>
+        </div>
+        <div class="step step-3">
+          <h2>Step 3: Review & Submit</h2>
+          <div id="review-summary"></div>
+          <button type="button" class="prev-button">Previous</button>
+          <button type="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h4>About Us</h4>
+          <p>one.com is a leading online solutions provider in Northern Europe and beyond. The company was established in 2002 in Denmark.
+            one.com helps millions of people put their dreams online and grow. one.com started with a belief that everyone should be able to present their ideas online.
+            It would be easy and affordable.
+          </p>
+        </div>
+        <div class="footer-center">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+           <a href="#"><img src="fb.png" alt="Facebook"></a>
+           <a href="#"><img src="X.png" alt="Twitter"></a>
+           <a href="#"><img src="insta.jfif" alt="Instagram"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 one.com All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
